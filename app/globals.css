@@ -31,3 +31,49 @@ body {
     text-wrap: balance;
   }
 }
+.shadow-glow {
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+}
+
+.bounce-slow {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.scroll-container {
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: rotate(-3deg); /* Slight tilt of the entire container */
+  background: linear-gradient(to right, #B0B0B0 44%, #B0B0B0 100%, #B0B0B0 100%, #B0B0B0 50%); 
+  padding: 10px 0; /* Vertical padding for the container */
+  margin: 40px -18px; /* Horizontal margin for overflow effect */
+}
+
+.scroll-content {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+  font-size: 18px;
+  color: #000; /* Color of the scrolling text */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
