@@ -22,7 +22,7 @@ const Banner: React.FC<{}> = () => {
           Rafia Zeeshan!
         </div>
         <div className="flex justify-center">
-          <p className="text-xl sm:text-2xl font-medium tracking-tighter text-gray-300 max-w-[600px]">
+          <p className="text-lg sm:text-2xl font-medium tracking-tight text-gray-300 max-w-[600px]">
             I do Code & Make Content About <br />
             <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
               Web Design
