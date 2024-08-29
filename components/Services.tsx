@@ -42,7 +42,7 @@ const Services = () => {
                   Transforming your ideas into fully responsive websites that
                   provide an optimal viewing experience across a wide range of
                   devices. I prioritize seamless navigation, intuitive layouts,
-                  and striking visuals to capture users' attention.
+                  and striking visuals to capture user&rsquo;s attention.
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ const Services = () => {
                 <p className="text-gray-400 text-[14px]">
                   Designing and implementing captivating user interfaces that
                   enhance user engagement and satisfaction. I focus on creating
-                  interfaces that guide users through your website's
+                  interfaces that guide users through your website&rsquo;s
                   functionalities with ease.
                 </p>
               </div>
@@ -127,8 +127,8 @@ const Services = () => {
                 </p>
                 <p className="text-gray-500 text-[14px]">
                   Providing ongoing support to keep your website up to date,
-                  secure, and functioning flawlessly. Whether it's routine
-                  updates or troubleshooting, I'm dedicated to ensuring your
+                  secure, and functioning flawlessly. Whether it&rsquo;s routine
+                  updates or troubleshooting, I&rsquo;m dedicated to ensuring your
                   online presence remains in top condition.
                 </p>
               </div>
