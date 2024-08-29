@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-      <main className="h-full w-full  bg-[url('/Loop.png')] bg-no-repeat">
+      <main className="h-full w-full  bg-[url('/Loop.png')] bg-repeat">
         <Navbar/>
         <Banner />
       <div className="flex flex-col gap-16">

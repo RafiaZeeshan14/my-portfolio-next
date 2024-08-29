@@ -1,3 +1,4 @@
+
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Navbar from "./Navbar";
@@ -5,39 +6,41 @@ import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
 const AllProjects: React.FC = () => {
-  const projects = [
-    {
-      imageSrc: "/feeportal.jpeg",
-      altText: "Student Fee Portal",
-      title: "Student Dashboard",
-      href: "/",
-    },
-    {
-      imageSrc: "/ecom.jpeg",
-      altText: "Ecommerce Website",
-      title: "Ecommerce Website",
-      href: "/",
-    },
-    {
-      imageSrc: "/BookStore.jpeg",
-      altText: "BookStore",
-      title: "BookStore",
-      href: "/",
-    },
-    {
-      imageSrc: "/blog.jpeg",
-      altText: "Blog Website",
-      title: "Blog Website",
-      href: "/",
-    },
-    {
-      imageSrc: "/todo.jpeg",
-      altText: "To-do List",
-      title: "To-do List",
-      href: "/",
-    },
-  
-  ];
+    const projects = [
+        {
+          imageSrc: "/feeportal.jpeg",
+          altText: "Student Fee Portal",
+          title: "Student Dashboard",
+          href: "/",
+          description:""
+        },
+        {
+          imageSrc: "/ecom.jpeg",
+          altText: "Ecommerce Website",
+          title: "Ecommerce Website",
+          href: "/",
+          description:""
+        },
+        {
+          imageSrc: "/BookStore.jpeg",
+          altText: "BookStore",
+          title: "BookStore",
+          href: "/",
+        },
+        {
+          imageSrc: "/blog.jpeg",
+          altText: "Blog Website",
+          title: "Blog Website",
+          href: "/",
+        },
+        {
+          imageSrc: "/todo.jpeg",
+          altText: "To-do List",
+          title: "To-do List",
+          href: "/",
+        },
+      
+      ];
 
   return (
     <>
@@ -63,6 +66,7 @@ const AllProjects: React.FC = () => {
               altText={project.altText}
               title={project.title}
               href={project.href}
+              description={project.description || 'No description available'}
             />
           ))}
         </div>
