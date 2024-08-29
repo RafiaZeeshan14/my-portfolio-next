@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Banner from "@/components/Banner";
 import Experience from "@/components/Experience";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Scroll from "@/components/Scroll";
 import TechStack from "@/components/TechStack";
 import Image from "next/image";
@@ -16,8 +17,9 @@ export default function Home() {
         <About/>
         <TechStack/>
         <Experience />
-        {/* 
         <Projects />
+        {/* 
+       
         <Footer /> */}
       </div>
     </main>
