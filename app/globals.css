@@ -59,7 +59,7 @@ body {
   transform: rotate(-3deg); /* Slight tilt of the entire container */
   background: linear-gradient(to right, #B0B0B0 44%, #B0B0B0 100%, #B0B0B0 100%, #B0B0B0 50%); 
   padding: 10px 0; /* Vertical padding for the container */
-  margin: 7% -18px; /* Horizontal margin for overflow effect */
+  margin: 7% -17.5px; /* Horizontal margin for overflow effect */
 }
 
 .scroll-content {
