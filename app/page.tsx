@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Scroll from "@/components/Scroll";
+import Services from "@/components/Services";
 import TechStack from "@/components/TechStack";
 import Image from "next/image";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <TechStack/>
         <Experience />
         <Projects />
+        <Services/>
         {/* 
        
         <Footer /> */}

@@ -46,7 +46,7 @@ const AllProjects: React.FC = () => {
     <>
       <Navbar />
     
-      <section id="all-projects" className="py-7 bg-black">
+      <section id="all-projects" className="py-7 h-full w-full  bg-[url('/Loop.png')] bg-no-repeat">
       <div className="text-start pl-8 mb-5">
       <Link href="/" passHref>
         <p className="text-white flex items-center">
