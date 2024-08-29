@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, altText, title, hre
         <Image
           src={imageSrc}
           alt={altText}
-          className="w-full object-cover bg-no-repeat h-[15rem]"
+          className="w-full object-cover bg-no-repeat h-[13rem]"
           width={300}
           height={256}
         />
@@ -36,11 +36,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, altText, title, hre
       {/* Link section */}
       <div
         onClick={openModal}
-        className="bg-gray-800 hover:bg-gray-700 duration-300 p-4 flex justify-between items-center text-white cursor-pointer"
+        className="bg-[#373636] hover:bg-gray-700 duration-300 p-4 flex justify-between items-center text-white cursor-pointer"
       >
         <div>
           <p className="text-[10px]">CLICK HERE TO VISIT</p>
-          <h3 className="text-lg font-bold">{title}</h3>
+          <h3 className="text-lg font-semibold">{title}</h3>
         </div>
         <span className="text-xl -rotate-45">&#8594;</span>
         

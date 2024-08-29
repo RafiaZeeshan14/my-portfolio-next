@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -19,10 +20,9 @@ export default function Home() {
         <TechStack/>
         <Experience />
         <Projects />
+        <Certifications/>
         <Services/>
-        {/* 
-       
-        <Footer /> */}
+        {/* <Footer /> */}
       </div>
     </main>
   );
