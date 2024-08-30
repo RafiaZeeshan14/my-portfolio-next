@@ -28,7 +28,7 @@ const Experience: React.FC<{}> = () => {
           </p>
         </div>
 
-        <p className="text-gray-300 pt-5">
+        <p className="text-gray-300 pt-5 text-sm sm:text-base">
         I started my journey as a Junior Front-End Developer at Team Fab,
          where I worked on developing full-stack websites, focusing solely on front-end development.
           I gained hands-on experience in building and optimizing user interfaces using modern frameworks and libraries

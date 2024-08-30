@@ -5,7 +5,7 @@ import Link from "next/link";
 const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-10">
-      <h2 className="text-white font-semibold text-center text-6xl pt-[35px]">
+      <h2 className="text-white font-semibold text-center text-5xl sm:text-6xl pt-[35px]">
         PROJECTS
       </h2>
       <Link href="/allprojects">
