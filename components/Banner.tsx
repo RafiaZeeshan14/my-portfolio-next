@@ -22,7 +22,7 @@ const Banner: React.FC<{}> = () => {
           Rafia Zeeshan!
         </div>
         <div className="flex justify-center">
-          <p className="text-lg sm:text-2xl font-medium tracking-tight text-gray-300 max-w-[600px]">
+          <p className="text-lg sm:text-2xl font-medium tracking-tight text-gray-300 max-w-[600px] fade-in-up">
             I do Code & Make Content About <br />         
             <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
               Web Design
@@ -36,7 +36,7 @@ const Banner: React.FC<{}> = () => {
           </p>
         </div>
 
-        <p className="text-md text-gray-200 my-5 max-w-[600px]">
+        <p className="text-md text-gray-200 my-5 max-w-[600px] fade-in-up">
           CS student and aspiring web developer specializing in the MERN stack,
           passionate about building dynamic and responsive web and mobile
           applications with MongoDB, Express, React, and Node.js
