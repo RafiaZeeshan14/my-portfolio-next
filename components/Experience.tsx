@@ -6,8 +6,20 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Experience: React.FC<{}> = () => {
-  const { ref: titleRef, inView: titleInView } = useInView({ triggerOnce: false, threshold: 0.1 });
-  const { ref: descriptionRef, inView: descriptionInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+  const { ref: titleRef, inView: titleInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
+  const { ref: descriptionRef, inView: descriptionInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
+  const { ref: detailsRef, inView: detailsInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
 
   return (
     <section id="experience" className="py-10">
@@ -55,9 +67,9 @@ const Experience: React.FC<{}> = () => {
 
         <motion.p
           className="text-gray-300 pt-5 text-sm sm:text-base"
-          ref={descriptionRef}
+          ref={detailsRef}
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: descriptionInView ? 1 : 0, y: descriptionInView ? 0 : 20 }}
+          animate={{ opacity: detailsInView ? 1 : 0, y: detailsInView ? 0 : 20 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
           I started my journey as a Junior Front-End Developer at Team Fab,
@@ -73,9 +85,9 @@ const Experience: React.FC<{}> = () => {
         </motion.p>
         <motion.div
           className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max"
-          ref={descriptionRef}
+          ref={detailsRef}
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: descriptionInView ? 1 : 0, y: descriptionInView ? 0 : 20 }}
+          animate={{ opacity: detailsInView ? 1 : 0, y: detailsInView ? 0 : 20 }}
           transition={{ duration: 0.6, delay: 0.9 }}
         >
           Next JS

@@ -10,7 +10,7 @@ const AllProjects: React.FC = () => {
       imageSrc: "/feeportal.jpeg",
       altText: "Student Fee Portal",
       title: "Student Dashboard",
-      href: "/",
+      href: "https://finalhacakthon.vercel.app/",
       description: (
         <div className="text-sm">
           <p className="mb-2 ">

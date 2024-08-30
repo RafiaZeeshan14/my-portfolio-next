@@ -45,7 +45,7 @@ const About: React.FC<{}> = () => {
         </motion.h1>
 
         <motion.p
-          className="tracking-[0.5em] text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl"
+          className="tracking-[0.5em] text-transparent font-light pb-5 bg-clip-text border-none bg-gradient-to-r from-purple-700 to-orange-500 text-1xl"
           initial="hidden"
           animate={controls}
           variants={slideRight}
