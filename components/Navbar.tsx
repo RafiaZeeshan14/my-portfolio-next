@@ -1,12 +1,29 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaSun } from 'react-icons/fa';
 
 const Navbar: React.FC<{}> = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className=" text-white py-4">
-      <div className="container mx-auto  flex justify-between items-center px-4">
-        {/* Left section: Logo */}
+    <nav className={`sticky top-0 z-50 py-4 text-white transition-all duration-300 ${scrolled ? 'bg-black bg-opacity-60' : 'bg-transparent'}`}>
+        <div className="container mx-auto   flex justify-between items-center px-4">
           {/* Left section: Logo and Names */}
           <div className="flex items-center space-x-2">
             <Link href="/" className="flex  items-center">
@@ -20,26 +37,26 @@ const Navbar: React.FC<{}> = () => {
 
         {/* Middle section: Links */}
         <div className="hidden md:flex space-x-6 text-sm ">
-          <Link href="/About" className="hover:text-gray-400 tracking-widest ">
+          <Link href="#about" className="hover:text-gray-400 tracking-widest ">
             ABOUT
           </Link>
-          <Link href="/work" className="hover:text-gray-400 tracking-widest ">
+          <Link href="#projects" className="hover:text-gray-400 tracking-widest ">
             WORK
           </Link>
-          <Link href="/notebook" className="hover:text-gray-400 tracking-widest ">
+          <Link href="#experience" className="hover:text-gray-400 tracking-widest ">
            EXPERIENCE
           </Link>
-          <Link href="/contact" className="hover:text-gray-400 tracking-widest ">
+          <Link href="#contact" className="hover:text-gray-400 tracking-widest ">
             CONTACT
           </Link>
         </div>
 
         {/* Right section: Icons */}
         <div className="flex items-center space-x-4">
-          <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <Link href="https://www.linkedin.com/in/rafia-zeeshan/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             <FaLinkedin />
           </Link>
-          <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <Link href="https://github.com/RafiaZeeshan14" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             <FaGithub />
           </Link>
           <button className="hover:text-gray-400">

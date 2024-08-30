@@ -50,7 +50,9 @@ body {
     transform: translateY(-10px);
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 .scroll-container {
   width: 100vw;

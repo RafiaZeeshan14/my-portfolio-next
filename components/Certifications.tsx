@@ -4,7 +4,7 @@ import React from "react";
 
 const Certifications: React.FC<{}> = () => {
   return (
-    <section id="experience">
+    <section id="experience" className="py-10">
       <h2 className="text-white font-semibold text-center text-4xl sm:text-6xl  pt-[45px]">
         CERTIFICATIONS
       </h2>

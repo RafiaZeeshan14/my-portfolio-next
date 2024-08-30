@@ -3,8 +3,8 @@ import React from "react";
 
 const Experience: React.FC<{}> = () => {
   return (
-    <section id="experience">
-      <h2 className="text-white font-semibold text-center text-5xl sm:text-6xl  pt-[45px]">
+    <section id="experience" className="py-10" >
+      <h2 className="text-white font-semibold text-center text-5xl sm:text-6xl   pt-[45px]">
         EXPERIENCE
       </h2>
       <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">

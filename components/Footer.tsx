@@ -6,7 +6,7 @@ import { FaFacebookF, FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2E2E2E] text-white py-8">
+    <footer className="bg-[#2E2E2E] text-white py-8" id="contact">
       <div className="container mx-auto text-center">
         {/* Profile Circle */}
         <div className="flex justify-center mb-4">

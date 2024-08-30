@@ -12,18 +12,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-      <main className="h-full w-full  bg-[url('/Loop.png')] bg-repeat bg-center ">
-        <Navbar/>
-        <Banner />
-      <div className="flex flex-col gap-16">
-        <Scroll/>
-        <About/>
-        <TechStack/>
+    <main className="h-full w-full  bg-[url('/Loop.png')] bg-repeat bg-center ">
+      <Navbar />
+      <Banner />
+      <Scroll />
+      <div className="flex flex-col gap-y-[4.5rem]">
+        <About />
+        <TechStack />
         <Experience />
         <Projects />
-        <Certifications/>
-        <Services/>
-         <Footer /> 
+        <Certifications />
+        <Services />
+        <Footer />
       </div>
     </main>
   );

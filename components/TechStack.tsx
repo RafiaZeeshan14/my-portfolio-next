@@ -7,7 +7,7 @@ const TechStack: React.FC<{}> = () => {
     <div>
       <section
         id="tech"
-        className="flex flex-col items-center justify-center h-full relative overflow-hidden pt-[35px] "
+        className="flex flex-col items-center justify-center h-full relative overflow-hidden pt-[45px] py-10"
         style={{ transform: "scale(0.9" }}
       >
         <div className="flex flex-col justify-around flex-wrap items-center max-w-[900px]">
@@ -36,7 +36,7 @@ const TechStack: React.FC<{}> = () => {
             <img src="/ex.png" alt="express" className="w-14 h-14" />
             <img src="/nextjs.png" alt="ts" className="w-16 h-16" />
             <img src="/NextUI.png" alt="NextUI" className="w-16 h-16" />
-            <img src="/git.png" alt="git" className="h-12 mt-2 " />
+            <img src="/Git.png" alt="git" className="h-12 mt-2 " />
             <img src="/firebase.png" alt="firebase" className="h-14 " />
             </div>
           </div>
