@@ -18,12 +18,12 @@ const Banner: React.FC<{}> = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-6 mt-10 cursor-pointer tracking-tight text-6xl sm:text-7xl  font-semibold text-white max-w-[600px] w-auto h-auto">
+        <div className="Main_Heading flex flex-col gap-6 mt-10 cursor-pointer  text-6xl sm:text-7xl    max-w-[600px] w-auto h-auto">
           Rafia Zeeshan!
         </div>
         <div className="flex justify-center">
           <p className="text-lg sm:text-2xl font-medium tracking-tight text-gray-300 max-w-[600px]">
-            I do Code & Make Content About <br />
+            I do Code & Make Content About <br />         
             <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
               Web Design
             </span>

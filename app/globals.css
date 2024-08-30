@@ -16,6 +16,9 @@
   }
 }
 
+body{
+  background: #000;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,6 +27,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
 }
 
 @layer utilities {
@@ -77,5 +81,25 @@ html {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+.Main_Heading  {
+  font-size: 60px;
+  line-height: 50px;
+  /* margin-left: -10px; */
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1px #d1cbcb;
+  background: url(/back.png);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  letter-spacing: 2px;
+  
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
   }
 }
