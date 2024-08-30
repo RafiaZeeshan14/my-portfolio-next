@@ -1,20 +1,51 @@
+"use client"
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Projects: React.FC = () => {
+  const { ref: sectionRef, inView: sectionInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
+  const { ref: cardRef, inView: cardInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
   return (
     <section id="projects" className="py-10">
-      <h2 className="text-white font-semibold text-center text-5xl sm:text-6xl pt-[35px]">
+      <motion.h2
+        className="text-white font-semibold text-center text-5xl sm:text-6xl pt-[35px]"
+        ref={sectionRef}
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : -50 }}
+        transition={{ duration: 0.6 }}
+      >
         PROJECTS
-      </h2>
+      </motion.h2>
       <Link href="/allprojects">
-        <p className="tracking-[0.5em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl">
+        <motion.p
+          className="tracking-[0.5em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl"
+          ref={sectionRef}
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : -30 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           EXPLORE MORE <span className="text-xl ">&#8594;</span>
-        </p>
+        </motion.p>
       </Link>
       {/* Card Container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 container mx-auto 2xl">
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 container mx-auto 2xl"
+        ref={cardRef}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: cardInView ? 1 : 0, y: cardInView ? 0 : 20 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+      >
         {/* ProjectCard components */}
         <ProjectCard
           imageSrc="/feeportal.jpeg"
@@ -83,9 +114,10 @@ const Projects: React.FC = () => {
           href="/"
           description=""
         />
-      </div>
+      </motion.div>
     </section>
   );
 };
 
 export default Projects;
+
