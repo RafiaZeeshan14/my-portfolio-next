@@ -12,7 +12,7 @@ import {
 } from 'react-icons/bs';
 import { ImChrome } from 'react-icons/im';
 
-// Define the type for ServiceCard props
+
 interface ServiceCardProps {
   icon: React.ReactNode;  // Specify that 'icon' is a React node
   title: string;
@@ -98,37 +98,37 @@ const Services: React.FC = () => {
       <div className="container mx-auto 2xl">
         <div className="grid md:grid-cols-2 gap-8 mt-7">
           <ServiceCard
-            icon={<BsGlobe2 size={50} />}
+            icon={<BsGlobe2 size={50} className='animate-pulse'/>}
             title="RESPONSIVE DESIGN"
             description="Transforming your ideas into fully responsive websites that provide an optimal viewing experience across a wide range of devices. I prioritize seamless navigation, intuitive layouts, and striking visuals to capture user’s attention."
             delay={0.2}
           />
           <ServiceCard
-            icon={<BsFillPeopleFill size={50} />}
+            icon={<BsFillPeopleFill size={50} className='animate-pulse'/>}
             title="USER INTERFACE (UI)"
             description="Designing and implementing captivating user interfaces that enhance user engagement and satisfaction. I focus on creating interfaces that guide users through your website’s functionalities with ease."
             delay={0.4}
           />
           <ServiceCard
-            icon={<BsGearWideConnected size={50} />}
+            icon={<BsGearWideConnected size={50} className='animate-pulse'/>}
             title="PERFORMANCE OPTIMIZATION"
             description="Improving the speed and performance of your website to minimize loading times and create a smooth browsing experience. I utilize best practices in coding and optimization techniques to enhance overall site performance."
             delay={0.6}
           />
           <ServiceCard
-            icon={<ImChrome size={50} />}
+            icon={<ImChrome size={50} className='animate-pulse' />}
             title="CROSS-BROWSER COMPATIBILITY"
             description="Ensuring your website looks and functions consistently across different browsers, ensuring a seamless experience for every visitor. I conduct rigorous testing to identify and resolve any compatibility issues."
             delay={0.8}
           />
           <ServiceCard
-            icon={<BsListTask size={50} />}
+            icon={<BsListTask size={50} className='animate-pulse'/>}
             title="INTERACTIVE COMPONENTS"
             description="Integrating interactive elements such as animations, sliders, and dynamic content to make your website engaging and memorable. These components not only capture attention but also communicate your brand message effectively."
             delay={1.0}
           />
           <ServiceCard
-            icon={<BsPersonFillGear size={50} />}
+            icon={<BsPersonFillGear size={50} className='animate-pulse'/>}
             title="MAINTENANCE & SUPPORT"
             description="Providing ongoing support to keep your website up to date, secure, and functioning flawlessly. Whether it’s routine updates or troubleshooting, I’m dedicated to ensuring your online presence remains in top condition."
             delay={1.2}
