@@ -111,8 +111,20 @@ const Projects: React.FC = () => {
           imageSrc="/ecom.jpeg"
           altText="Ecommerce Website"
           title="Ecommerce Website"
-          href="/"
-          description=""
+          href="https://ecom-tshirt-store.vercel.app/"
+          description={
+          <>
+           <div className="text-sm">
+          <p className="mb-2 ">
+            Developed a dynamic and responsive e-commerce website using React.js
+            and Tailwind CSS. The project features a user-friendly interface
+            with product cards, detailed product pages, and a shopping cart
+            system. Implemented a clean, modern design with Tailwind CSS for
+            styling, ensuring a seamless and visually appealing shopping
+            experience across various devices.
+          </p>
+        </div>
+          </>}
         />
       </motion.div>
     </section>

@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, description, projectLink
           &times;
         </button>
         <div className="flex flex-col items-start">
-            <h1 className='font-bold text-xl py-2'>Project Description : </h1>
+            <h1 className='font-bold text-xl py-2 text-white'>Project Description : </h1>
           <div className="text-gray-200 mb-4">{description}</div>
           <Link href={projectLink} target='_blank'>
             <p className="text-blue-500 underline">Visit Project</p>
