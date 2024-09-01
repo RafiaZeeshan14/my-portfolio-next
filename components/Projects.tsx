@@ -1,11 +1,12 @@
 "use client"
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Projects: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const { ref: sectionRef, inView: sectionInView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
@@ -15,7 +16,13 @@ const Projects: React.FC = () => {
     triggerOnce: false,
     threshold: 0.1,
   });
-
+  useEffect(() => {
+    // Simulate loading delay
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); 
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <section id="projects" className="py-10">
       <motion.h2
