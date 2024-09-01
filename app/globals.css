@@ -62,31 +62,39 @@ html {
   width: 100vw;
   overflow: hidden;
   white-space: nowrap;
-  transform: rotate(-3deg); /* Slight tilt of the entire container */
+  transform: rotate(-3deg); 
   background: linear-gradient(to right, #B0B0B0 44%, #B0B0B0 100%, #B0B0B0 100%, #B0B0B0 50%); 
-  padding: 10px 0; /* Vertical padding for the container */
-  margin: 7% -17.5px; /* Horizontal margin for overflow effect */
+  padding: 10px 0;
+  margin: 7% -17.5px; 
+}
+
+
+@media (max-width: 700px) {
+  .scroll-container {
+    margin-top: 15%; 
+  }
 }
 
 .scroll-content {
   display: inline-block;
-  animation: scroll 25s linear infinite;
+  animation: scroll 30s linear infinite;
   font-size: 18px;
-  color: #000; /* Color of the scrolling text */
+  color: #000; 
+  padding-left: 100%; 
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0); 
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-100%); 
   }
 }
+
 .Main_Heading  {
   font-size: 60px;
   line-height: 50px;
-  /* margin-left: -10px; */
   font-weight: 600;
   color: transparent;
   -webkit-text-stroke: 1px #d1cbcb;
@@ -102,48 +110,4 @@ html {
   100% {
     background-position: 2000px 0;
   }
-}
-/* styles/globals.css */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in-up {
-  animation: fadeInUp 1s ease-out forwards;
-}
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-in-left {
-  animation: slideInLeft 1s ease-out forwards;
-}
-
-.slide-in-right {
-  animation: slideInRight 1s ease-out forwards;
 }
