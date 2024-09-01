@@ -12,25 +12,25 @@ const TechStack: React.FC<{}> = () => {
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 }, // Start hidden with downward offset
-    visible: { opacity: 1, y: 0 }, // Fade in and move up to normal position
+    visible: { opacity: 1, y: 0 }, 
   };
 
   // Use the useInView hook to trigger animations when in view
   const { ref, inView } = useInView({
     triggerOnce: false, // Animation will trigger every time it comes into view
-    threshold: 0.2, // 20% of the section needs to be visible to trigger
+    threshold: 0.2, 
   });
 
   return (
     <div>
       <motion.section
-        ref={ref} // Attach the ref to the section
+        ref={ref}
         id="tech"
         className="flex flex-col items-center justify-center h-full relative overflow-hidden pt-[45px] py-10"
         style={{ transform: "scale(0.9)" }}
-        variants={sectionVariants} // Apply fade-up variants to the section
+        variants={sectionVariants} 
         initial="hidden"
-        animate={inView ? "visible" : "hidden"} // Trigger animation based on inView
+        animate={inView ? "visible" : "hidden"} 
         transition={{ duration: 0.8 }} // Duration of the fade-up effect
       >
         <div className="flex flex-col justify-around flex-wrap items-center max-w-[900px]">
@@ -50,7 +50,7 @@ const TechStack: React.FC<{}> = () => {
                   className="h-14"
                   variants={iconVariants}
                   initial="hidden"
-                  animate={inView ? "visible" : "hidden"} // Animate based on visibility
+                  animate={inView ? "visible" : "hidden"} 
                   transition={{ delay: index * 0.2, duration: 0.5 }}
                 />
               ))}
@@ -66,7 +66,7 @@ const TechStack: React.FC<{}> = () => {
                   className=" h-14"
                   variants={iconVariants}
                   initial="hidden"
-                  animate={inView ? "visible" : "hidden"} // Animate based on visibility
+                  animate={inView ? "visible" : "hidden"} 
                   transition={{ delay: (index + 8) * 0.2, duration: 0.5 }}
                 />
               ))}

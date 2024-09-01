@@ -1,11 +1,9 @@
 "use client"
 
-
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Navbar from "./Navbar";
 import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { IoIosArrowBack } from "react-icons/io";
 

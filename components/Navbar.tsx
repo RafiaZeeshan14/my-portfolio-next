@@ -130,9 +130,9 @@ const Navbar: React.FC = () => {
           >
             <FaGithub />
           </Link>
-          <button className="hover:text-gray-400">
+          {/* <button className="hover:text-gray-400">
             <FaSun />
-          </button>
+          </button> */}
           <button
             className="sm:hidden p-0.5 hover:text-gray-400"
             onClick={() => setIsNavOpen(!isNavOpen)}
