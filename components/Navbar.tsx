@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { IoFilter } from "react-icons/io5";
 import { useRouter } from "next/navigation";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -185,7 +186,7 @@ const Navbar: React.FC = () => {
           onClick={scrollToTop}
           className="fixed bottom-8 right-8 p-3 bg-gray-600 text-white rounded-full hover:bg-gray-700 hover:border hover:border-gray-500 hover:shadow-xl transition duration-300 ease-in-out"
         >
-          <FaArrowUp />
+          <IoIosArrowUp/>
         </button>
       )}
     </nav>
