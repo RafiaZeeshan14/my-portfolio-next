@@ -1,9 +1,9 @@
-
 "use client";
 
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const About: React.FC<{}> = () => {
   const controls = useAnimation();
@@ -78,9 +78,15 @@ const About: React.FC<{}> = () => {
           animate={controls}
           variants={slideRight}
         >
-          <button className="z-[1] padding-20 hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-10 border-[0.1px] border-white hover:border-transparent">
+          <Link
+            download
+            href="Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer "
+            className="z-[1] padding-20 hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-10 border-[0.1px] border-white hover:border-transparent"
+          >
             Download CV
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>
