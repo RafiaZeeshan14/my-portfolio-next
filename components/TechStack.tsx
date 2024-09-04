@@ -41,32 +41,52 @@ const TechStack: React.FC<{}> = () => {
             SEE BELOW
           </p>
           <div className="flex gap-10 h-auto py-7 mx-2">
-            <div className="grid grid-cols-4 gap-10 sm:flex">
-              {["html", "css", "Bootstrap", "tailwind", "ChakraUI", "figma", "JS", "TS"].map((tech, index) => (
+            <div className="grid grid-cols-4 gap-10 sm:flex cursor-pointer">
+              {[
+                { name: "html", tooltip: "HTML" },
+                { name: "css", tooltip: "CSS" },
+                { name: "Bootstrap", tooltip: "Bootstrap" },
+                { name: "tailwind", tooltip: "Tailwind CSS" },
+                { name: "ChakraUI", tooltip: "Chakra UI" },
+                { name: "figma", tooltip: "Figma" },
+                { name: "JS", tooltip: "JavaScript" },
+                { name: "TS", tooltip: "TypeScript" },
+              ].map((tech, index) => (
                 <motion.img
-                  key={tech}
-                  src={`/${tech}.png`}
-                  alt={tech}
-                  className="h-14"
+                  key={tech.name}
+                  src={`/${tech.name}.png`}
+                  alt={tech.name}
+                  className="h-12 sm:h-14"
+                  title={tech.tooltip}
                   variants={iconVariants}
                   initial="hidden"
-                  animate={inView ? "visible" : "hidden"} 
+                  animate={inView ? "visible" : "hidden"}
                   transition={{ delay: index * 0.2, duration: 0.5 }}
                 />
               ))}
             </div>
           </div>
           <div className="flex gap-[42px] h-auto py-2 mx-2">
-            <div className="grid grid-cols-4 gap-[42px] sm:flex">
-              {["Nodejs", "react", "mongoDB", "ex", "nextjs", "NextUI", "Git", "firebase"].map((tech, index) => (
+            <div className="grid grid-cols-4 gap-[45px] sm:flex cursor-pointer">
+              {[
+                { name: "Nodejs", tooltip: "Node.js" },
+                { name: "react", tooltip: "React" },
+                { name: "mongoDB", tooltip: "MongoDB" },
+                { name: "ex", tooltip: "Express.js" },
+                { name: "nextjs", tooltip: "Next.js" },
+                { name: "NextUI", tooltip: "Next UI" },
+                { name: "Git", tooltip: "Git" },
+                { name: "firebase", tooltip: "Firebase" },
+              ].map((tech, index) => (
                 <motion.img
-                  key={tech}
-                  src={`/${tech}.png`}
-                  alt={tech}
-                  className=" h-14"
+                  key={tech.name}
+                  src={`/${tech.name}.png`}
+                  alt={tech.name}
+                  className="h-12 sm:h-14"
+                  title={tech.tooltip} 
                   variants={iconVariants}
                   initial="hidden"
-                  animate={inView ? "visible" : "hidden"} 
+                  animate={inView ? "visible" : "hidden"}
                   transition={{ delay: (index + 8) * 0.2, duration: 0.5 }}
                 />
               ))}

@@ -38,7 +38,7 @@ const Footer = () => {
           }}
           transition={{ duration: 0.6, staggerChildren: 0.15 }}
         >
-          {"Lets Talk with Me!".split("").map((char, index) => (
+          {"Lets Connect !".split("").map((char, index) => (
             <motion.span
               key={index}
               initial={{ opacity: 0, y: -30 }}
