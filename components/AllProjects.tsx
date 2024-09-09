@@ -99,26 +99,26 @@ const AllProjects: React.FC = () => {
         </div>
       ),
     },
-    {
-      imageSrc: "/blog.jpeg",
-      altText: "Blog Website",
-      title: "Blog Website",
-      href: "https://yourthoughts-blogweb.vercel.app/",
-      description: (
-        <div className="text-sm">
-          <p className="mb-2 ">
-            Developed a comprehensive blog website using React.js and Tailwind
-            CSS for the frontend, integrated with a backend to manage dynamic
-            content. Users can create, edit, and delete their own blog posts
-            through an intuitive interface. The site features a responsive
-            layout with categorized posts and an easy-to-use navigation system.
-            Backend integration supports allowing for personalized content
-            management and seamless interaction. Designed with Tailwind CSS for
-            a modern, adaptable look and optimized for various devices.
-          </p>
-        </div>
-      ),
-    },
+    // {
+    //   imageSrc: "/blog.jpeg",
+    //   altText: "Blog Website",
+    //   title: "Blog Website",
+    //   href: "https://yourthoughts-blogweb.vercel.app/",
+    //   description: (
+    //     <div className="text-sm">
+    //       <p className="mb-2 ">
+    //         Developed a comprehensive blog website using React.js and Tailwind
+    //         CSS for the frontend, integrated with a backend to manage dynamic
+    //         content. Users can create, edit, and delete their own blog posts
+    //         through an intuitive interface. The site features a responsive
+    //         layout with categorized posts and an easy-to-use navigation system.
+    //         Backend integration supports allowing for personalized content
+    //         management and seamless interaction. Designed with Tailwind CSS for
+    //         a modern, adaptable look and optimized for various devices.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
     {
       imageSrc: "/todo.jpeg",
       altText: "To-do List",
