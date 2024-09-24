@@ -84,6 +84,36 @@ const AllProjects: React.FC = () => {
       ),
     },
     {
+      imageSrc: "/agen.jpeg",
+      altText: "Ageny Website",
+      title: "Ageny Website",
+      href: "https://agency-website01.vercel.app/",
+      description: (
+        <div className="text-sm">
+          <p className="mb-2 ">
+          I developed a modern and responsive agency website using Next.js and TypeScript, integrating Magic UI for seamless UI/UX design. The website features a clean, minimalistic layout that prioritizes performance and user experience,
+           ensuring fast load times and smooth navigation. 
+          </p>
+          <p className="mb-0.5">Key functionalities include:</p>
+          <ul className="mb-4 list-disc pl-5">
+            <li>
+              <strong>Dynamic Routing</strong> for smooth page transitions and a multi-page feel.
+            </li>
+            <li>
+              <strong>Reusable Components</strong>to streamline development and enhance scalability.
+            </li>
+            <li>
+              <strong>Responsive Design </strong> ensuring the website looks great across all devices.
+              </li>
+            <li>
+              <strong>Interactive Elements</strong>  like service sections, designed with a focus on user engagement.
+              </li>
+          </ul>
+         
+        </div>
+      ),
+    },
+    {
       imageSrc: "/BookStore.jpeg",
       altText: "BookStore",
       title: "BookStore",
