@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex justify-center space-x-4 mt-6">
           <Link
-            href="https://www.facebook.com/rafia.altitudeheight"
+            href="https://www.facebook.com/rafia.zeeshan.12/"
             target="_blank"
             className="text-gray-400 hover:text-white border rounded-full p-2 hover:border-gray-400"
           >

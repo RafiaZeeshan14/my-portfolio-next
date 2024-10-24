@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const Experience: React.FC<{}> = () => {
   const { ref: titleRef, inView: titleInView } = useInView({
@@ -57,7 +58,7 @@ const Experience: React.FC<{}> = () => {
               alt={"experience"}
             />
             <p className="text-gray-300">
-              <span className="font-semibold">Packr /</span> Front-End Developer
+              <Link href="https://www.packrit.com/" target="_blank" className="font-semibold hover:underline">Packr </Link>/ Front-End Developer
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
