@@ -80,7 +80,7 @@ const About: React.FC<{}> = () => {
         >
           <Link
             download
-            href="Resume.pdf"
+            href="myResume.pdf"
             target="_blank"
             rel="noopener noreferrer "
             className="z-[1] padding-20 hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-10 border-[0.1px] border-white hover:border-transparent"
