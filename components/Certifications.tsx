@@ -103,21 +103,20 @@ const Certifications: React.FC<{}> = () => {
             animate={{ opacity: cardInView ? 1 : 0, y: cardInView ? 0 : 30 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <Link href="/" target="_blank" className="z-[1]">
+            <Link href="/web-dev.png" target="_blank" className="z-[1]">
               <div className="flex-row flex">
                 <Image
-                  src="/process.webp" 
+                  src="/web-dev.png" 
                   height={150}
                   width={150}
-                  alt="Certificate in Process"
+                  alt="web development certificate"
                 />
                 <div className="p-3">
                   <p className="text-white font-semibold text-xl">
-                    Web & App Development (In Process)
+                    Web & App Development
                   </p>
                   <p className="text-gray-500 text-[10px]">
-                    Completed a web and app development course from SMIT. The certification process
-                    is currently underway, with verification expected soon. The course equipped me with
+                    Completed a web and app development course from SMIT.The course equipped me with
                     key skills in modern web technologies, including React, Node.js, and Express.js.
                   </p>
                 </div>

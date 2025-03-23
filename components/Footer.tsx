@@ -54,8 +54,8 @@ const Footer = () => {
         </motion.h2>
 
         <p className="text-gray-400 mt-2">
-          I am always open to discuss your project, improve your online presence
-          or help with your UI/UX design.
+        I am always open to discussing your project, enhancing your website&apos;s,
+        and refining user experience.
         </p>
 
         {/* Social Icons */}
