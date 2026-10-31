@@ -9,6 +9,48 @@ import { IoIosArrowBack } from "react-icons/io";
 
 const AllProjects: React.FC = () => {
   const projects = [
+     {
+      imageSrc: "/vickyfarmhouse.webp",
+      altText: "Vicky Farmhouse",
+      title: "Vicky Farmhouse",
+      href: "https://vickyfarmhouse.com/",
+      description: (
+        <div className="text-sm">
+          <p className="mb-2">
+            Built according to the client&apos;s requirements, the website
+            showcases Vicky Farmhouse and includes live booking and slot
+            selection functionality.
+          </p>
+        </div>
+      ),
+    },
+     {
+      imageSrc: "/heights-communications.webp",
+      altText: "Heights Communications",
+      title: "Heights Communications",
+      href: "https://heights-communications.com/",
+      description: (
+        <div className="text-sm">
+          <p className="mb-2">
+            A website for Heights Communications, introducing the company and
+            its communication services.
+          </p>
+        </div>
+      ),
+    },
+    {
+      imageSrc: "/westturn-media.webp",
+      altText: "Westurn Media",
+      title: "Westurn Media",
+      href: "https://westurn-media.vercel.app/",
+      description: (
+        <div className="text-sm">
+          <p className="mb-2">
+            A website presenting Westurn Media and its digital media services.
+          </p>
+        </div>
+      ),
+    },
     {
       imageSrc: "/feeportal.jpeg",
       altText: "Student Fee Portal",
@@ -83,6 +125,8 @@ const AllProjects: React.FC = () => {
         </div>
       ),
     },
+
+   
     {
       imageSrc: "/agen.jpeg",
       altText: "Ageny Website",
@@ -213,20 +257,20 @@ const AllProjects: React.FC = () => {
         </div>
       ),
     },
-    {
-      imageSrc: "/adm.png",
-      altText: "Admission Form",
-      title: "Admission Form",
-      href: "https://the-admission-form.netlify.app/",
-      description: (
-        <div className="text-sm">
-          <p className="mb-2 ">
-            Designed a pixel-perfect admission form that combines aesthetics
-            with functionality for a superior user experience.
-          </p>
-        </div>
-      ),
-    },
+    // {
+    //   imageSrc: "/adm.png",
+    //   altText: "Admission Form",
+    //   title: "Admission Form",
+    //   href: "https://the-admission-form.netlify.app/",
+    //   description: (
+    //     <div className="text-sm">
+    //       <p className="mb-2 ">
+    //         Designed a pixel-perfect admission form that combines aesthetics
+    //         with functionality for a superior user experience.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
     {
       imageSrc: "/reg.png",
       altText: "Registration Form",
@@ -242,21 +286,21 @@ const AllProjects: React.FC = () => {
         </div>
       ),
     },
-    {
-      imageSrc: "/netflix.png",
-      altText: "Netflix Clone",
-      title: "Netflix Clone",
-      href: "https://the-netflix-clone-01.netlify.app/",
-      description: (
-        <div className="text-sm">
-          <p className="mb-2 ">
-            Experience streaming with this Netflix clone project. Explore a vast
-            library of movies and TV shows, at your fingertips . Dive into
-            entertainment and enjoy a world of cinematic delight.{" "}
-          </p>
-        </div>
-      ),
-    },
+    // {
+    //   imageSrc: "/netflix.png",
+    //   altText: "Netflix Clone",
+    //   title: "Netflix Clone",
+    //   href: "https://the-netflix-clone-01.netlify.app/",
+    //   description: (
+    //     <div className="text-sm">
+    //       <p className="mb-2 ">
+    //         Experience streaming with this Netflix clone project. Explore a vast
+    //         library of movies and TV shows, at your fingertips . Dive into
+    //         entertainment and enjoy a world of cinematic delight.{" "}
+    //       </p>
+    //     </div>
+    //   ),
+    // },
     {
       imageSrc: "/olx.png",
       altText: "Olx Clone",
@@ -270,18 +314,18 @@ const AllProjects: React.FC = () => {
         </div>
       ),
     },
-    {
-      imageSrc: "/fb.png",
-      altText: "FB Clone",
-      title: "FB Clone",
-      href: "https://the-facebook-clone.netlify.app/",
-      description: (
-        <div className="text-sm">
-          <p className="mb-2 ">
-          My Facebook clone is more than just a project, its a showcase of my dedication to creating engaging and accessible web experiences  </p>
-        </div>
-      ),
-    },
+    // {
+    //   imageSrc: "/fb.png",
+    //   altText: "FB Clone",
+    //   title: "FB Clone",
+    //   href: "https://the-facebook-clone.netlify.app/",
+    //   description: (
+    //     <div className="text-sm">
+    //       <p className="mb-2 ">
+    //       My Facebook clone is more than just a project, its a showcase of my dedication to creating engaging and accessible web experiences  </p>
+    //     </div>
+    //   ),
+    // },
   ];
 
   return (

@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
       >
         {/* ProjectCard components */}
-        <ProjectCard
+        {/* <ProjectCard
           imageSrc="/feeportal.jpeg"
           altText="Student Fee Portal"
           title="Student Dashboard"
@@ -132,6 +132,39 @@ const Projects: React.FC = () => {
           </p>
         </div>
           </>}
+        /> */}
+
+        <ProjectCard
+          imageSrc="/webautodrapes.webp"
+          altText="Web Auto Drapes"
+          title="Auto Drapes"
+          href="https://autodrapes.com/"
+          description={
+            <div className="text-sm">
+              <p className="mb-2">
+                Built a custom Shopify theme based on the client&apos;s
+                requirements. The store lets customers find and purchase car
+                shades compatible with their vehicle by selecting its make,
+                model, and year.
+              </p>
+            </div>
+          }
+        />
+
+        <ProjectCard
+          imageSrc="/auraconceptcreator.png"
+          altText="Aura Concept Creator"
+          title="Aura Concept Creator"
+          href="https://www.auraconceptcreator.com/"
+          description={
+            <div className="text-sm">
+              <p className="mb-2">
+                Created a premium, visually engaging website for Aura Concept
+                Creator, tailored to the creative agency&apos;s requirements and
+                designed to showcase its brand and services.
+              </p>
+            </div>
+          }
         />
       </motion.div>
     </section>
@@ -139,4 +172,3 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
-
